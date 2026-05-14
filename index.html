@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mtflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- apna header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-left">
+            <h1 class="logo">Myflix</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Memories</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <input type="text" id="searchBar" placeholder="Search videos...">
+            <div class="profile-icon"></div>
+        </div>
+    </header>
+
+    <!-- Hero Banner ka formation -->
+    <div class="hero" id="heroBanner">
+        <div class="hero-content">
+            <h1 class="hero-title">This is me Sania💘</h1>
+            <p class="hero-description">My journey full of laughter, scenic views, and incredible memories with
+                friends.⭐️</p>
+            <div class="hero-buttons">
+                <button class="btn btn-play">▶ Play</button>
+                <button class="btn btn-more">ℹ More Info</button>
+            </div>
+        </div>
+        <div class="hero-vignette"></div>
+    </div>
+
+    <!-- Main Content - apni rows -->
+    <main class="main-content">
+        <div id="rows-container"></div>
+    </main>
+
+    <!-- Video Modal - ka video structure-->
+    <div class="video-modal" id="videoModal">
+        <button class="close-btn" id="closeModal">✖</button>
+        <video id="modalVideoPlayer" controls playsinline></video>
+    </div>
+
+    <script src="rowsData.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
